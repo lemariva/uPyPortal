@@ -1,0 +1,19 @@
+{% args login %}
+<li class="note col-xs-12 col-sm-6 col-lg-4">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      {{ login[0] }}
+      <a
+        class="btn btn-danger btn-xs archive-note pull-right"
+        data-note="{{ login[0] }}"
+        href="archive/{{ login[0] }}">&times;</a>
+    </div>
+    <div class="panel-body">
+      {{ login[0] }} <br/>
+      {{ login[1] }} <br/>
+      {{ login[2] }} <br/>
+      {{ login[3] }} <br/>
+      {{ login[4] }} <br/>
+    </div>
+  </div>
+</li>
